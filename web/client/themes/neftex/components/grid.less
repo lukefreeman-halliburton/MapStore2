@@ -1,0 +1,40 @@
+.ms-grid {
+
+    .ms-map-card-col {
+        margin: 0;
+        padding: 0; 
+        height: 100%;
+    }
+
+    .gridcard {
+        padding-bottom: 60%;
+        box-shadow: none !important;
+            
+        &:hover {
+            box-shadow: none;
+        }
+    
+        .gridCardDetails {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 260px;
+        }
+
+        .map-thumb-description {
+            font-size:11px;
+            letter-spacing: 0.03em;
+        }
+
+        button {
+            color: #fff;
+            border: none;
+
+            &:hover {
+                background: @bg-primary;
+            }
+        }
+    }
+      
+}

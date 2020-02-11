@@ -1,0 +1,92 @@
+.page-maps, .page-dashboard {
+
+    .navbar-home {
+        background: @bg-secondary;
+        border-radius: 0;
+
+        .square-button {
+            padding:0;
+            position: relative;
+            top: 13px;
+            right: 10px;
+            width: 25px;
+            height: 25px;
+            border: none !important;
+
+            &:hover, &:focus, &:active {
+                background:none;
+            }
+
+            &:hover {
+                opacity: .5;
+            }
+
+            .glyphicon {
+                font-size: 13px;
+                color: #fff;
+            }
+            
+        }
+    }
+    
+    > .container + .container {
+      border-top: none;
+    }
+
+
+    .ms-home-description  {
+        height: 500px;
+
+        p {
+            font-size: 18px;
+
+            small {
+                font-size: 100%;
+            }
+        }
+
+        .container {
+            display: flex;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+    }
+
+    .MapSearchBar {
+        margin-top: -60px;
+        margin-bottom: 40px;
+
+        .input-group {
+            box-shadow: none;
+            background: @bg-third;
+        }
+
+        .searchInput {
+            width: 87%;
+        }
+
+        button {
+            &:hover, &:active, &:focus {
+                background: none !important;
+                box-shadow: none;
+            }
+        }
+    }
+
+    .empty-state-container {
+        h1 {
+            font-size: 18px;
+        }
+        .empty-state-image {
+            margin-top: 60px;
+    
+            .glyphicon {
+                font-size: 60px !important;
+            }
+        }
+    }
+    
+
+}

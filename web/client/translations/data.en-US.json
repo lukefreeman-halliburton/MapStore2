@@ -280,7 +280,7 @@
                 "errorWhenDeleting": "An error occurred during deleting process",
                 "errorSizeExceeded": "Please, reduce the size of the details or the quality of the images"
             },
-			"search": "search..."
+			"search": "Search..."
 		},
         "resources": {
             "successSaved": "This resource has been saved correctly",
@@ -2371,7 +2371,7 @@
         "contextManager": {
             "title": "Manage Contexts",
             "gridTitle": "Contexts",
-            "searchPlaceholder": "search...",
+            "searchPlaceholder": "Search...",
             "newContext": "New Context",
             "editContextTooltip": "Edit context"
         },

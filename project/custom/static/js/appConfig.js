@@ -7,7 +7,7 @@
  */
 
 module.exports = {
-    pages: [{
+    pages: [{ 
         name: "home",
         path: "/",
         component: require('./pages/Home')
@@ -18,7 +18,13 @@ module.exports = {
     }],
     pluginsDef: require('./plugins.js'),
     initialState: {
-        defaultState: {},
+        defaultState: {
+            theme: {
+                selectedTheme: {
+                    id: "neftex"
+                }
+            }
+        },
         mobile: {}
     }
 };

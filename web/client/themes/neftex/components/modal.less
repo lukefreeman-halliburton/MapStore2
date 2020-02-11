@@ -1,0 +1,97 @@
+.modal-backdrop.in {
+    opacity: .95;
+    background-color: #1c1f29;
+}
+
+.modal {
+    position: relative;
+    height: auto;
+    padding: 0 !important;
+    width: 100% !important;
+
+    .modal-dialog {
+
+        @media (max-width: @mobile) { 
+            width: 90%;
+        }    
+
+        .modal-content {
+            background: @bg-secondary;
+            box-shadow: none;
+
+            .modal-header {
+                border-bottom: none;
+                background: @bg-third;
+
+                button.close {
+                    margin-top: 2px;
+                    color: #fff;
+                    text-shadow: none;
+                    outline: none;
+                    opacity: 1;
+
+                    span {
+                        opacity: 1;
+                    }
+
+                    &:hover {
+                        opacity: .5;
+                    }
+                }
+
+            }
+
+            .modal-body {
+                padding: 30px;
+                padding-bottom: 0;
+            }
+
+            .modal-footer {
+                border-top: none;
+                padding: 30px;
+            }
+        }
+    }   
+}
+
+.modal-open {
+    padding:0 !important;
+}
+
+.modal-dialog-draggable {
+    
+    box-shadow: none;
+
+    .modal-header {
+        border-bottom: none;
+        background: @bg-third;
+
+        button.close {
+            margin-top: 2px;
+            color: #fff;
+            text-shadow: none;
+            outline: none;
+            opacity: 1;
+
+            span {
+                opacity: 1;
+            }
+
+            &:hover {
+                opacity: .5;
+            }
+        }
+
+    }
+
+    .modal-body {
+        padding: 20px;
+        padding-bottom: 0;
+        background: @bg-secondary;
+    }
+
+    .modal-footer {
+        border-top: none;
+        padding: 30px;
+    } 
+}

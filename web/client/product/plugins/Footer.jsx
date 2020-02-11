@@ -54,22 +54,24 @@ class Footer extends React.Component {
                 alt={logo.alt || ''} />
         );
         return (
-            <Grid>
-                {logo && logo.src && <Row>
-                    <Col xs={12} className="text-center">
-                        <div>
-                            {href ? <a target="_blank" href={href}>
-                                {image}
-                            </a> : image}
-                        </div>
-                    </Col>
-                </Row>}
-                <Row>
-                    <Col xs={12} className="text-center">
-                        <HTML msgId="home.footerDescription"/>
-                    </Col>
-                </Row>
-            </Grid>
+            <footer>
+                <Grid>
+                    {logo && logo.src && <Row>
+                        <Col xs={12} className="text-center">
+                            <div>
+                                {href ? <a target="_blank" href={href}>
+                                    {image}
+                                </a> : image}
+                            </div>
+                        </Col>
+                    </Row>}
+                    <Row>
+                        <Col xs={12} className="text-center">
+                            <HTML msgId="home.footerDescription"/>
+                        </Col>
+                    </Row>
+                </Grid>
+            </footer>
         );
     }
 }

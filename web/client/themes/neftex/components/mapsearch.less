@@ -1,0 +1,43 @@
+.MapSearchBar {
+   
+    .input-group {
+        box-shadow: none;
+        background: @bg-third;
+    }
+
+    .searchInput {
+        width: 85% !important;
+        border-radius: 0;
+    }
+
+    button {
+        &:hover, &:active, &:focus {
+            background: none !important;
+            box-shadow: none;
+        }
+    }
+
+    .search-toolbar-options {
+        
+        .btn-group-menu-options  {
+            top: 0 !important;
+        }
+
+        button {
+            border-radius: 0;
+            height: 52px;
+            top: 1px; 
+
+            .glyphicon {
+                color: #fff;
+            }
+
+            &:hover {
+                .glyphicon {
+                    color: @brand-primary;
+                }
+            }
+        }
+    }
+
+}

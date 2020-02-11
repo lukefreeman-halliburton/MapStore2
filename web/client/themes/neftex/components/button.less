@@ -1,0 +1,66 @@
+
+//standard buttons --- 
+.btn {
+    font-size: 14px; 
+} 
+
+//close
+button.close {
+  font-size: 14px;
+}
+
+//square buttons --- 
+.square-button {
+  padding:0;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  background: @bg-primary;
+
+  &:hover {
+    background: @bg-primary;
+
+    .glyphicon {
+      color: @brand-primary;
+    }
+  }
+
+  &.active, &:focus {
+    background: @brand-primary;
+
+    &:hover {
+      background: @brand-primary;
+
+      .glyphicon {
+        color: #fff;
+      }
+    }
+  }
+
+  .glyphicon {
+    font-size: 14px;
+    color: #fff;
+  }
+}
+
+.square-button[disabled] {
+  background:none;
+
+  &:hover {
+    background: none !important;
+  }
+
+  .glyphicon {
+    color: #5d5d5d;
+  }
+}
+
+//button group containers ---
+.btn-group-vertical, .btn-group-horizontal {
+  box-shadow: none;
+
+  > .btn:first-child:not(:last-child), .btn:last-child:not(:first-child) {
+    border-radius: 0;
+  }
+
+}

@@ -8,4 +8,6 @@ module.exports = [{
     id: "dark"
 }, {
     id: "geosolutions"
+}, {
+    id: "neftex"
 }];

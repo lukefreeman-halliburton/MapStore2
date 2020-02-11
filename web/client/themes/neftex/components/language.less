@@ -1,0 +1,45 @@
+.mapstore-langselector {
+
+    position: relative;
+    right: 20px;
+
+    .btn {
+        padding:0 4px;
+    }
+    
+    button {
+        &:hover, &:active, &:focus {
+            background: none !important;
+            box-shadow: none;
+        }
+    }
+
+    .dropdown-toggle {
+        box-shadow: none !important;
+        background: none !important;
+    }
+
+    .dropdown {
+        .dropdown-menu {
+
+            box-shadow: none;
+
+            > li > a {
+                padding: 5px 20px !important;
+
+                button {
+                    margin-top: -5px;
+                    text-transform: none;
+                }
+            }
+
+            a[role="menuitem"] {
+                text-transform: none;
+                font-weight: 100;
+                letter-spacing: 0.03em;
+            }
+
+        }
+    }
+
+}
